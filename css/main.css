@@ -92,6 +92,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   border-radius: 26px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.02);
 }
 .block.login .form-card__title {
   text-transform: capitalize;
@@ -213,4 +214,21 @@ body {
 }
 .block.login .form-card .create-account::first-letter {
   text-transform: uppercase;
+}
+.block.footer {
+  padding-top: 5px;
+}
+.block.footer .col p {
+  text-align: center;
+  font-weight: 500;
+}
+.block.footer .col p a {
+  display: inline-block;
+  text-decoration: none;
+  color: #010000;
+  text-transform: capitalize;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 2px solid #010000;
+  line-height: 16px;
 }/*# sourceMappingURL=main.css.map */

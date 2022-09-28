@@ -126,6 +126,7 @@ body {
             box-sizing: border-box;
             text-align: center;
             border-radius: 26px;
+            box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 2%);
 
             &__title {
                 text-transform: capitalize;
@@ -253,5 +254,26 @@ body {
             }
         }
 
+    }
+
+    &.footer {
+        padding-top: 5px;
+        .col {
+            p {
+                text-align: center;
+                font-weight: 500;
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $dark-00;
+                    text-transform: capitalize;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                    border-left: 2px solid $dark-00;
+                    line-height: 16px;
+                }
+            }
+        }
     }
 }
