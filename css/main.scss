@@ -1,0 +1,223 @@
+// colors
+$light-00: #f2f2f2;
+$light-01: #f5f2ea;
+$light-02: #fdc886;
+$dark-00: #010000;
+$dark-01: #545454;
+
+// fonts
+$poppins: 'Poppins', sans-serif;
+
+body {
+    font-family: $poppins;
+    background-color: $light-01;
+}
+
+
+.block {
+    padding: 40px 0;
+    .wrapper {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 40px;
+    }
+}
+
+
+.btn {
+    display: block;
+    text-decoration: none;
+    color: $dark-00;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+
+    &.icon {
+        margin-right: 16px;
+        svg {
+            height: 32px;
+            stroke-width: 0.6px;
+        }
+    }
+
+    &.primary {
+        background-color: $light-02;
+        padding: 16px 26px;
+        border-radius: 9px;
+
+        &-alt {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 26px;
+            background-color: transparent;
+            border: 2px solid $light-00;
+            transition: 250ms;
+            font-weight: 700;
+
+            img {
+                height: 28px;
+            }
+
+            &:hover {
+                background-color: $light-00;
+            }
+        }
+    }
+}
+
+.block {
+    
+    &.header {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .col {
+            &.logo {
+                h1 {
+                    font-size: 30px;
+                    font-weight: 800;
+                    margin-bottom: 28px;
+                }
+                
+                a {
+                    display: block;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: $dark-00;
+
+                    &.sales-link {
+                        padding-top: 14px;
+                        border-top: 1px solid $dark-01;
+                        display: flex;
+                        align-items: center;
+                        gap: 28px;
+                        font-size: 15px;
+
+                        svg {
+                            height: 16px;
+                            stroke-width: 2px;
+                        }
+                    }
+                }
+            }
+
+            .guest-menu {
+                display: flex;
+                align-items: center;
+                gap: 28px;
+            }
+
+        }
+    }
+
+    &.login {
+
+        .form-card {
+            background-color: #ffffff;
+            width: 600px;
+            margin: auto;
+            padding: 56px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 26px;
+
+            &__title {
+                text-transform: capitalize;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 26px;
+            }
+
+            &__copy {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                margin-bottom: 40px;
+            }
+
+            form {
+                margin-bottom: 40px;
+                .form-group {
+                    margin-bottom: 14px;
+                }
+                
+                input {
+                    width: 100%;
+                    padding: 14px 18px;
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    border: 2px solid $light-00;
+                    font-family: $poppins;
+                    font-size: 16px;
+                    outline: none;
+
+                    &::placeholder {
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        opacity: 0.85;
+                    }
+                }
+
+                a {
+                    display: block;
+                    margin-top: 28px;
+                    margin-bottom: 38px;
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $dark-00;
+
+                    &::first-letter {
+                        text-transform: uppercase;
+                    }
+                }
+
+                .btn {
+                    width: 100%;
+                }
+            }
+
+            &__optional-tag {
+                display: block;
+                margin-bottom: 34px;
+                font-size: 16px;
+                font-weight: 500;
+                color: $dark-00;
+            }
+
+            &__social-signup {
+                display: flex;
+                gap: 4px;
+                margin-bottom: 34px;
+                .btn {
+                    flex: 1;
+                    font-size: 14px;
+                }
+            }
+
+            .create-account {
+                font-size: 16px;
+                font-weight: 500;
+
+                a {
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: $dark-00;
+                    font-weight: 600;
+                }
+
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+}
