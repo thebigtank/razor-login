@@ -144,6 +144,7 @@ body {
             form {
                 margin-bottom: 40px;
                 .form-group {
+                    position: relative;
                     margin-bottom: 14px;
                 }
                 
@@ -162,6 +163,18 @@ body {
                         font-weight: 500;
                         opacity: 0.85;
                     }
+                }
+
+                .action {
+                    position: absolute;
+                    text-transform: capitalize;
+                    right: 20px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: line-through;
+                    opacity: 0.8;
                 }
 
                 a {

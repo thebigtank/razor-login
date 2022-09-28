@@ -109,6 +109,7 @@ body {
   margin-bottom: 40px;
 }
 .block.login .form-card form .form-group {
+  position: relative;
   margin-bottom: 14px;
 }
 .block.login .form-card form input {
@@ -135,6 +136,17 @@ body {
   text-transform: capitalize;
   font-weight: 500;
   opacity: 0.85;
+}
+.block.login .form-card form .action {
+  position: absolute;
+  text-transform: capitalize;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: line-through;
+  opacity: 0.8;
 }
 .block.login .form-card form a {
   display: block;
