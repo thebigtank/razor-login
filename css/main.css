@@ -165,11 +165,32 @@ body {
   width: 100%;
 }
 .block.login .form-card__optional-tag {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: block;
+  margin: auto;
   margin-bottom: 34px;
-  font-size: 16px;
+  padding: 0 24px;
+  font-size: 15px;
   font-weight: 500;
   color: #010000;
+}
+.block.login .form-card__optional-tag::before, .block.login .form-card__optional-tag::after {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #010000;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.block.login .form-card__optional-tag::before {
+  left: 0;
+}
+.block.login .form-card__optional-tag::after {
+  right: 0;
 }
 .block.login .form-card__social-signup {
   display: flex;

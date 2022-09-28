@@ -198,11 +198,32 @@ body {
             }
 
             &__optional-tag {
+                position: relative;
+                width: max-content;
                 display: block;
+                margin: auto;
                 margin-bottom: 34px;
-                font-size: 16px;
+                padding: 0 24px;
+                font-size: 15px;
                 font-weight: 500;
                 color: $dark-00;
+
+                &::before, &::after {
+                    content: "";
+                    width: 18px;
+                    height: 2px;
+                    background-color: $dark-00;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+                
+                &::before {
+                    left: 0;
+                }
+                &::after {
+                    right: 0;
+                }
             }
 
             &__social-signup {
